@@ -8,7 +8,7 @@ As a junior data engineer for Pewlett Hackard, I have been tasked to provide dat
 - Develop ERD diagram describing relationships discovered during data profiling stage.
     - Utilize the tool [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com) to create an ERD diagram describing the table relationships.  
     - The following image will bew stored in EmployeeSQL directory in GitHub repository.  The name of the file is EmployeeERD.png.
-        - ![ERD Diagram](EmployeeSQL\EmployeeERD.png)
+        - ![ERD Diagram](EmployeeSQL/EmployeeERD.png)
 - From the ERD diagram create the DDL commands that will be utilized to create the tables in Postgres database.  Appropriate primmary and foreign keys should be included that enforce relationships described in ERD diagram.
     - DDL script saved in the EmployeeSQL directory and named **EmployeeSchemaDDL.sql**
 - Run DDL script in Postgres to create the tables.
