@@ -97,10 +97,12 @@ REFERENCES "Department" ("DeptId");
 ALTER TABLE "DeptManager" ADD CONSTRAINT "fk_DeptManager_EmployeeNo" FOREIGN KEY("EmployeeNo")
 REFERENCES "Employee" ("EmployeeNo");
 
-CREATE VIEW salanalysis_vw
-AS
- SELECT s."EmployeeNo",
+CREATE OR REPLACE VIEW public.salanalysis_vw
+ AS
+ SELECT 
+    s."EmployeeNo",
     s."Salary",
+	e."FirstName" || ' ' || e."LastName" AS "Name",
     e."HireDate",
     t."Title"
    FROM "Salary" s
