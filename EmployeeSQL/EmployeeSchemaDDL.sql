@@ -97,3 +97,13 @@ REFERENCES "Department" ("DeptId");
 ALTER TABLE "DeptManager" ADD CONSTRAINT "fk_DeptManager_EmployeeNo" FOREIGN KEY("EmployeeNo")
 REFERENCES "Employee" ("EmployeeNo");
 
+CREATE VIEW salanalysis_vw
+AS
+ SELECT s."EmployeeNo",
+    s."Salary",
+    e."HireDate",
+    t."Title"
+   FROM "Salary" s
+     JOIN "Employee" e ON e."EmployeeNo" = s."EmployeeNo"
+     JOIN "Title" t ON t."TitleId"::text = e."EmpTitleId"::text
+  ORDER BY s."Salary" DESC;

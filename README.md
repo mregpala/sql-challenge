@@ -37,3 +37,5 @@ The SQL query code should be saved in the EmployeeSQL folder and file named **Em
 
 ## Optional
 Utilize SQL Alchemy within a Jupyter notebook to import employee salary information from Postgres into a Pandas dataframe.  Analyze data for validity.  There is speculation that the salary data is suspect.  The jupyter notebook will be saved in the EmployeeSQL folder and named **EmployeeJobAnalysis.ipynb**.  The analysis results will be included in the jupyter notebook.
+
+Utilized the custom view salanalysis_vw to pull data into data frame.
